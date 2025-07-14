@@ -1,19 +1,36 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>Поехали!</title>
-    <meta name="description" content="Poehali.dev — запусти свой сайт за минуту!"/>
-    <meta name="author" content="poehali.dev"/>
+    <title>MarketPlace — Интернет-магазин с быстрой доставкой | Миллионы товаров</title>
+    <meta name="description" content="MarketPlace — интернет-магазин с широким ассортиментом товаров: электроника, одежда, продукты, книги. Быстрая доставка, выгодные цены, надежная гарантия. Более 1000 товаров в наличии."/>
+    <meta name="keywords" content="интернет магазин, онлайн покупки, электроника, одежда, доставка, скидки, товары, MarketPlace"/>
+    <meta name="author" content="MarketPlace"/>
     <link rel="icon" type="image/svg+xml" href="/favicon.svg">
-    <meta property="og:title" content="Поехали!">
-    <meta property="og:description" content="Ваш личный программист, который делает сайты в 30 раз быстрее обычного.">
-    <meta property="og:image:width" content="4800">
-    <meta property="og:image:height" content="2520">
-    <meta property="og:image:alt" content="Поехали! — сервис разработки сайтов с помощью ИИ">
-    <meta property="og:image" content="https://cdn.poehali.dev/intertnal/img/og.png">
-    <meta name="twitter:image" content="https://cdn.poehali.dev/intertnal/img/og.png">
+    <meta name="robots" content="index, follow"/>
+    <meta name="googlebot" content="index, follow"/>
+    <meta name="yandex" content="index, follow"/>
+    <link rel="canonical" href="https://marketplace.ru/"/>
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://marketplace.ru/">
+    <meta property="og:title" content="MarketPlace — Интернет-магазин с быстрой доставкой">
+    <meta property="og:description" content="Миллионы товаров по лучшим ценам с быстрой доставкой. Электроника, одежда, продукты, книги и многое другое.">
+    <meta property="og:image" content="https://marketplace.ru/og-image.jpg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="MarketPlace — интернет-магазин">
+    <meta property="og:site_name" content="MarketPlace">
+    <meta property="og:locale" content="ru_RU">
+    
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="https://marketplace.ru/">
+    <meta name="twitter:title" content="MarketPlace — Интернет-магазин с быстрой доставкой">
+    <meta name="twitter:description" content="Миллионы товаров по лучшим ценам с быстрой доставкой">
+    <meta name="twitter:image" content="https://marketplace.ru/og-image.jpg">
 
     <!-- IMPORTANT: DO NOT REMOVE THIS SCRIPT TAG OR THIS COMMENT! -->
 
@@ -24,6 +41,98 @@
 
     <meta name="pp-name" value="wildberries-sale-site">
       <script src="https://cdn.poehali.dev/intertnal/js/inspector-min.js"></script>
+      
+    <!-- JSON-LD Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "name": "MarketPlace",
+      "url": "https://marketplace.ru",
+      "description": "Интернет-магазин с широким ассортиментом товаров",
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": "https://marketplace.ru/search?q={search_term_string}",
+        "query-input": "required name=search_term_string"
+      }
+    }
+    </script>
+    
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "MarketPlace",
+      "url": "https://marketplace.ru",
+      "logo": "https://marketplace.ru/logo.png",
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "telephone": "+7-800-555-0123",
+        "contactType": "customer service",
+        "availableLanguage": "Russian"
+      },
+      "sameAs": [
+        "https://vk.com/marketplace",
+        "https://t.me/marketplace"
+      ]
+    }
+    </script>
+    
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "ItemList",
+      "numberOfItems": 6,
+      "itemListElement": [
+        {
+          "@type": "Product",
+          "position": 1,
+          "name": "iPhone 15 Pro",
+          "image": "https://marketplace.ru/img/iphone15pro.jpg",
+          "description": "Новейший iPhone с революционными возможностями",
+          "brand": "Apple",
+          "offers": {
+            "@type": "Offer",
+            "priceCurrency": "RUB",
+            "price": "89990",
+            "availability": "https://schema.org/InStock",
+            "seller": {
+              "@type": "Organization",
+              "name": "MarketPlace"
+            }
+          },
+          "aggregateRating": {
+            "@type": "AggregateRating",
+            "ratingValue": "4.8",
+            "reviewCount": "1250"
+          }
+        },
+        {
+          "@type": "Product",
+          "position": 2,
+          "name": "MacBook Pro",
+          "image": "https://marketplace.ru/img/macbookpro.jpg",
+          "description": "Мощный ноутбук для профессионалов",
+          "brand": "Apple",
+          "offers": {
+            "@type": "Offer",
+            "priceCurrency": "RUB",
+            "price": "199990",
+            "availability": "https://schema.org/InStock",
+            "seller": {
+              "@type": "Organization",
+              "name": "MarketPlace"
+            }
+          },
+          "aggregateRating": {
+            "@type": "AggregateRating",
+            "ratingValue": "4.9",
+            "reviewCount": "890"
+          }
+        }
+      ]
+    }
+    </script>
   </head>
 
 <body>

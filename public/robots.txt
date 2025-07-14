@@ -12,3 +12,25 @@ Allow: /
 
 User-agent: *
 Allow: /
+
+# Sitemaps
+Sitemap: https://marketplace.ru/sitemap.xml
+
+# Crawl-delay
+Crawl-delay: 1
+
+# Specific directives
+Allow: /img/
+Allow: /css/
+Allow: /js/
+
+# Disallow admin pages (if any)
+Disallow: /admin/
+Disallow: /private/
+
+# Cache
+User-agent: *
+Disallow: /cache/
+
+# Host
+Host: marketplace.ru
